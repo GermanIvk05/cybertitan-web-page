@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>CyberTitan Checklists</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a>Windows</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <aside>
+                <h2>Table of Contents</h2>
+                <ol>
+                    <li>
+                        <a href="#local-users-and-groups">Local Users and Groups</a>
+                    </li>
+                    <li>
+                        <a href="#lockout-policy">Lockout Policy</a>
+                    </li>
+                    <li>
+                        <a href="#password-policy">Password Policy</a>
+                    </li>
+                    <li>
+                        <a href="#audit-policy">Audit Policy</a>
+                    </li>
+                    <li>
+                        <a href="#user-account-control">User Account Control</a>
+                    </li>
+                    <li>
+                        <a href="#autoplay">AutoPlay</a>
+                    </li>
+                    <li>
+                        <a href="#windows-firewall">Windows Firewall</a>
+                    </li>
+                </ol>
+            </aside>
+            <article>
+                <h2>Windows Checklist</h2>
+
+                <section id="local-users-and-groups">
+                    <h3>Local Users and Groups</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox"> Disable accounts for all <strong>unauthorized</strong> users
+                        </li>
+                        <li>
+                            <input type="checkbox"> <em>Administrators</em> group should <strong>only</strong> contain <strong>authorized</strong> administrators
+                        </li>
+                        <li>
+                            <input type="checkbox"> <em>Guests</em> group should <strong>only</strong> have <em>Guest</em> account in it
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="lockout-policy">
+                    <h3>Lockout Policy</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox"> Account lockout duration: <em>30 minutes</em>
+                        </li>
+                        <li>
+                            <input type="checkbox"> Account lockout threshhold: <em>10 incorrect passwords</em>
+                        </li>
+                        <li>
+                            <input type="checkbox"> Reset account lockout counter after: <em>30 minutes</em>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="password-policy">
+                    <h3>Password Policy</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox"> Enforce passowrd history: <em>5 passwords rememebred</em>
+                        </li>
+                        <li>
+                            <input type="checkbox"> Maximum passowrd age: <em>(30-90 days)</em>
+                        </li>
+                        <li>
+                            <input type="checkbox"> Minimum passowrd age: <em>(10-30 days)</em>
+                        </li>
+                        <li>
+                            <input type="checkbox"> Password must meet the complexity requirements: <em>Enabled</em>
+                        </li>
+                        <li>
+                            <input type="checkbox"> Store password using reversible encription: <em>Disabled</em>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="audit-policy">
+                    <h3>Audit Policy</h3>
+                    <table>
+                        <colgroup  span="5"></colgroup>
+                        <tr>
+                            <th>Audit Policy</th>
+                            <th>Default</th>
+                            <th>Member Server</th>
+                            <th>High Security</th>
+                            <th>Domain Controller</th>
+                        </tr>
+                        <tr>
+                            <td>Audit account logon events</td>
+                            <td>Success</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                        </tr>
+                        <tr>
+                            <td>Audit account management</td>
+                            <td>No Auditing</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                        </tr>
+                        <tr>
+                            <td>Audit directory service access</td>
+                            <td>No Auditing</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                        </tr>
+                        <tr>
+                            <td>Audit logon events</td>
+                            <td>Success</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                        </tr>
+                        <tr>
+                            <td>Audit object access</td>
+                            <td>Success</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                            <td>Success, Failure</td>
+                        </tr>
+                        <tr>
+                            <td>Audit policy change</td>
+                            <td>No Auditing</td>
+                            <td>Success</td>
+                            <td>Success</td>
+                            <td>Success</td>
+                        </tr>
+                        <tr>
+                            <td>Audit privilage use</td>
+                            <td>No Auditing</td>
+                            <td>Failure</td>
+                            <td>Success, Failure</td>
+                            <td>Failure</td>
+                        </tr>
+                        <tr>
+                            <td>Audit process tracking</td>
+                            <td>No Auditing</td>
+                            <td>No Auditing</td>
+                            <td>No Auditing</td>                                
+                            <td>No Auditing</td>
+                        </tr>
+                        <tr>
+                            <td>Audit system events</td>
+                            <td>No Auditing</td>
+                            <td>Success</td>
+                            <td>Success</td>
+                            <td>Success</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>User Account Control</h3>
+                    <p>Add more detailed infromation here</p>
+
+                    <h3>AutoPlay</h3>
+                    <p>Add more detailed information here</p>
+
+                    <h3>Windows Firewall</h3>
+                    <p>Add more detailed information here</p>
+                </section>
+            </article>
+        </main>
+        <footer>Copyright: German Ivkovich @ 2023</footer>
+    </body>
+</html>

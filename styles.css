@@ -1,0 +1,135 @@
+:root {
+    --bg-color-1: black;
+    --border-color: gray;
+}
+
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--bg-color-1);
+    background-color:white;
+    line-height: 1.5rem;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+p {
+    max-width: 66ch;
+    text-indent: 1rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+em {
+    color: orange;
+    font-weight: bold;
+}
+
+input {
+    margin: 0;
+}
+
+header {
+    color: white;
+    padding: 2rem;
+}
+
+header, nav, footer {
+    background-color: dodgerblue;
+}
+
+nav {
+    padding: 0.5em;
+    background-color: var(--bg-color-1);
+    color: white;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+aside {
+    padding: 1rem;
+}
+
+aside ol {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+aside ol li {
+    padding: 0.3rem;
+}
+
+aside ol a {
+    padding: 1rem;
+}
+
+aside ol a {
+    color: black;
+}
+
+aside ol li:hover, a:hover {
+    color: orangered;
+}
+
+article {
+    padding: 1rem;
+    width: 60%;
+    min-width: min-content;
+}
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+table {
+    margin: 1rem auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px
+}
+
+th, td {
+    padding: 0.25rem;
+}
+
+td {
+    border-top: 1px solid var(--border-color);
+}
+
+footer {
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
